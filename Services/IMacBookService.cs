@@ -1,0 +1,1 @@
+using System.Collections.Generic;\nusing MacBookFinder.API.Models;\n\nnamespace MacBookFinder.API.Services\n{\n    public interface IMacBookService\n    {\n        MacBook FindCheapestMacBook();\n        IEnumerable<MacBook> GetAllMacBooks();\n        IEnumerable<MacBook> GetMacBooksByPriceRange(decimal minPrice, decimal maxPrice);\n    }\n}
